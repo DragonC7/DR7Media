@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dragon.C7 Tube</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 25px;
+      background: #181818;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #ff0066;
+    }
+
+    /* SEARCH */
+    .search-box {
+      display: flex;
+      align-items: center;
+      width: 45%;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 20px 0 0 20px;
+      border: none;
+      outline: none;
+      background: #303030;
+      color: white;
+    }
+
+    .search-box button {
+      padding: 8px 15px;
+      border-radius: 0 20px 20px 0;
+      border: none;
+      background: #ff0066;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* VIDEO GRID */
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 25px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 10px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      background: #222;
+    }
+
+    .thumb {
+      width: 100%;
+      height: 170px;
+      background: #333;
+      border-radius: 8px;
+    }
+
+    .title {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .uploader {
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    /* UPLOAD BTN */
+    .upload-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #ff0066;
+      color: white;
+      padding: 15px 22px;
+      border-radius: 40px;
+      cursor: pointer;
+      font-size: 18px;
+      box-shadow: 0 0 15px #ff0066;
+      transition: 0.2s;
+    }
+
+    .upload-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Dragon.C7 Tube</div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search videos..." />
+      <button>Search</button>
+    </div>
+  </header>
+
+  <div class="videos">
+    <div class="card">
+      <div class="thumb"></div>
+      <div class="title">My First Edit 🔥</div>
+      <div class="uploader">By Dragon.C7</div>
+    </div>
+
+    <div class="card">
+      <div class="thumb"></div>
+      <div class="title">Epic AMV One Piece ⚔️</div>
+      <div class="uploader">By Dragon.C7</div>
+    </div>
+
+    <div class="card">
+      <div class="thumb"></div>
+      <div class="title">Ninjago Edit New Style ⚡</div>
+      <div class="uploader">By Dragon.C7</div>
+    </div>
+  </div>
+
+  <div class="upload-btn">Upload Video</div>
+
+</body>
+</html>
